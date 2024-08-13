@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    
+}
+
+
+.especialidades-box a{
+    text-decoration: none;
+    color: #fff;
+}
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #5fa9ac;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: #e60000;
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:transparent;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #e60000;
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 2; /* adicione essa linha para trazer a barra de navegação para frente */
+  }
+  
+  .voltar {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s; /* adicione essa linha para a animação de mudar de cor */
+  }
+  
+  .voltar:hover {
+    color: #e60000; /* adicione essa linha para a animação de mudar de cor */
+  }
+  
+  .voltar::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e60000;
+    margin-top: 5px;
+    transition: width 0.2s; /* adicione essa linha para a animação da linha embaixo */
+  }
+  
+  .voltar:hover::after {
+    width: 50%; /* adicione essa linha para a animação da linha embaixo */
+  }
+  .especiliadades {
+    position: relative;
+    height: 100vh; /* ajuste o tamanho da seção */
+    width: 100vw; /* ajuste o tamanho da seção */
+  }
+  
+  .especiliadades::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+  }
+  
+  .interface {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* ajuste a cor e opacidade do fundo */
+  }
+  .btn-social {
+    position: relative;
+    z-index: 2; /* adicione essa linha */
+  }
